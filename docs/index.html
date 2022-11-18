@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ======= Información de la pestaña del navegador ======= -->
+    <title>Anefty</title>
+    <link rel="shortcut icon" href="./assets/icons/favicon.png">
+
+    <!-- ======= Librerias CSS ======= -->
+    <link rel="stylesheet" href="./assets/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+
+    <!-- ======= Complemento CSS Sección 1 - 4 (Select 24 hours - all categories) ======= -->
+    <link rel="stylesheet" href="./assets/plugins/nice-select/nice-select.css">
+
+    <!-- ======= Complemento CSS Sección 2 - 4 (Card Slider ) ======= -->
+    <link rel="stylesheet" href="./assets/plugins/swiper/swiper-bundle.min.css">
+
+    <!-- ======= Script CSS ======= -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <!-- ======= Header ======= -->
+    <header class="header">
+
+        <!-- ======= Header (Menu)======= -->
+        <div class="header-main style--two love-sticky">
+            <div class="container">
+                <div class="header-inner position-relative px-0 bg-transparent">
+                    <div class="row align-items-center">
+                        <div class="col-lg-4 col-md-6 col-sm-9 col-6">
+                            <div class="d-flex align-items-center">
+                                <div class="logo"><a href="index.html"><img src="./assets/icons/logo.svg"
+                                            class="main-logo" alt=""> <img src="./assets/icons/sticky-logo.svg"
+                                            class="sticky-logo" alt=""></a></div>
+                                <form class="search-form d-none d-sm-block ms-4" action="#">
+                                    <div class="form-group"><button type="submit"><img
+                                                src="assets/icons/search-gradient.svg" class="svg" alt=""></button>
+                                        <input type="text" class="form-control mb-0" placeholder="Search item…">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div
+                            class="col-lg-8 col-md-6 col-sm-3 col-6 d-flex align-items-center justify-content-end position-static">
+                            <div class="nav-wrapper d-flex align-items-center">
+                                <div class="nav-wrap-inner">
+                                    <ul class="nav">
+                                        <li class="current-menu-parent"><a href="#">Home</a></li>
+                                        <li><a href="#">Explore</a></li>
+                                        <li><a href="#">Pages</a></li>
+                                        <li><a href="#">Blog</a></li>
+                                        <li><a href="#">Contact</a></li>
+                                    </ul>
+                                </div>
+                                <div class="d-none d-md-flex align-items-center ms-4"><a href="#" class="btn"><img
+                                            src="assets/icons/create-icon.svg" alt="" class="svg">
+                                        Create</a>
+                                    <div class="dropdown ml-10"><a href="#" class="user-avatar dropdown-toggle"
+                                            data-bs-toggle="dropdown"><img src="assets/img/user.png" alt=""> <span
+                                                class="user-status"><img src="assets/icons/check.svg" class="svg"
+                                                    alt=""></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#"><img src="assets/icons/profile.svg"
+                                                        alt=""> Profile</a></li>
+                                            <li><a class="dropdown-item" href="#"><img src="assets/icons/create.svg"
+                                                        alt=""> Create</a></li>
+                                            <li><a class="dropdown-item" href="#"><img src="assets/icons/collection.svg"
+                                                        alt=""> Collection</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="#"><img src="assets/icons/wallet.svg"
+                                                        alt=""> Wallet</a></li>
+                                            <li><a class="dropdown-item" href="#"><img src="assets/icons/explore.svg"
+                                                        alt=""> Explore</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ======= Header (Banner)======= -->
+        <div class="banner style--two ov-hidden">
+            <div id="particles" data-bg-img="assets/img//banner-bg3.png"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-1">
+                        <div class="banner-content text-white mb-5 mb-lg-0">
+                            <h2 class="stroke-text">Digital</h2>
+                            <h1>Collection And Sell, NFTs</h1><a href="#" class="btn"><img
+                                    src="assets/icons/discover.svg" alt="" class="svg"> Discover</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-11">
+                        <div class="banner-img mb-60 mb-lg-0"><img src="assets/img/banner-img3.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- ======= Main ======= -->
+    <main>
+
+        <!-- ======= Sección 1 (Top Collections - 24 Hours) ======= -->
+        <section class="section1 pt-120 pb-90">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="section-title style--two">
+                            <div class="d-flex flex-wrap align-items-center">
+                                <h2 class="text-white"><img src="assets/icons/title-icon1.svg" alt=""
+                                        class="svg mt-1 me-3"> Top Collections</h2><select class="select">
+                                    <option value="24_hour">24 Hours</option>
+                                    <option value="3_days">3 Days</option>
+                                    <option value="7_days">7 Days</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 d-none d-lg-block">
+                        <div class="d-flex justify-content-lg-end"><a href="#" class="btn btn-border btn-sm"><img
+                                    src="assets/icons/view-all.svg" alt="" class="svg">
+                                View All</a></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-3 col-lg-4 col-sm-6"><a href="#" class="single-collection" data-count="01">
+                            <div class="collection-img"><img src="assets/img/collection1.png" alt=""></div>
+                            <div class="content">
+                                <h5>Meka_Verse</h5><span>$203,621,269</span>
+                            </div>
+                        </a></div>
+                    <div class="col-xl-3 col-lg-4 col-sm-6"><a href="#" class="single-collection" data-count="02">
+                            <div class="collection-img"><img src="assets/img/collection2.gif" alt=""></div>
+                            <div class="content">
+                                <h5>Bored_YachtClub</h5><span>$118,321,276</span>
+                            </div>
+                        </a></div>
+                    <div class="col-xl-3 col-lg-4 col-sm-6"><a href="#" class="single-collection" data-count="03">
+                            <div class="collection-img"><img src="assets/img/collection3.png" alt=""></div>
+                            <div class="content">
+                                <h5>Bambooz_lers</h5><span>$10,429,103</span>
+                            </div>
+                        </a></div>
+                    <div class="col-xl-3 col-lg-4 col-sm-6"><a href="#" class="single-collection" data-count="04">
+                            <div class="collection-img"><img src="assets/img/collection4.png" alt=""></div>
+                            <div class="content">
+                                <h5>The_Humanoids</h5><span>$7,991,156</span>
+                            </div>
+                        </a></div>
+                    <div class="col-xl-3 col-lg-4 col-sm-6"><a href="#" class="single-collection" data-count="05">
+                            <div class="collection-img"><img src="assets/img/collection5.png" alt=""></div>
+                            <div class="content">
+                                <h5>Stacked_Toadz</h5><span>$6,700,653</span>
+                            </div>
+                        </a></div>
+                    <div class="col-xl-3 col-lg-4 col-sm-6"><a href="#" class="single-collection" data-count="06">
+                            <div class="collection-img"><img src="assets/img/collection6.png" alt=""></div>
+                            <div class="content">
+                                <h5>Mutant_Cats</h5><span>$22,278,069</span>
+                            </div>
+                        </a></div>
+                    <div class="col-xl-3 col-lg-4 col-sm-6"><a href="#" class="single-collection" data-count="07">
+                            <div class="collection-img"><img src="assets/img/collection7.gif" alt=""></div>
+                            <div class="content">
+                                <h5>Mutant_YachtClub</h5><span>$10,307,676</span>
+                            </div>
+                        </a></div>
+                    <div class="col-xl-3 col-lg-4 col-sm-6"><a href="#" class="single-collection" data-count="08">
+                            <div class="collection-img"><img src="assets/img/collection8.png" alt=""></div>
+                            <div class="content">
+                                <h5>Optics_PeopleS</h5><span>$19,359,169</span>
+                            </div>
+                        </a></div>
+                    <div class="col-xl-3 col-lg-4 col-sm-6"><a href="#" class="single-collection" data-count="09">
+                            <div class="collection-img"><img src="assets/img/collection9.gif" alt=""></div>
+                            <div class="content">
+                                <h5>Goofy_Oversized</h5><span>$203,621,269</span>
+                            </div>
+                        </a></div>
+                    <div class="col-xl-3 col-lg-4 col-sm-6"><a href="#" class="single-collection" data-count="10">
+                            <div class="collection-img"><img src="assets/img/collection10.png" alt=""></div>
+                            <div class="content">
+                                <h5>Cyber_Kongz</h5><span>$7,227,956</span>
+                            </div>
+                        </a></div>
+                    <div class="col-xl-3 col-lg-4 col-sm-6"><a href="#" class="single-collection" data-count="11">
+                            <div class="collection-img"><img src="assets/img/collection11.png" alt=""></div>
+                            <div class="content">
+                                <h5>The_DogePound</h5><span>$6,609,169</span>
+                            </div>
+                        </a></div>
+                    <div class="col-xl-3 col-lg-4 col-sm-6"><a href="#" class="single-collection" data-count="12">
+                            <div class="collection-img"><img src="assets/img/collection12.gif" alt=""></div>
+                            <div class="content">
+                                <h5>Halloween_Bears</h5><span>$4,673,966</span>
+                            </div>
+                        </a></div>
+                    <div class="col-12 d-lg-none">
+                        <div class="d-flex justify-content-center mb-30"><a href="#" class="btn btn-border btn-sm"><img
+                                    src="assets/icons/view-all.svg" alt="" class="svg">
+                                View All</a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======= Sección 2 (Live Auctions) ======= -->
+        <section class="section2 pt-120 pb-120 section-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <div class="section-title style--two text-white">
+                            <h2><img src="assets/icons/title-icon2.svg" alt="" class="svg mt-1 me-3"> Live Auctions
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 d-none d-sm-block">
+                        <div class="swiper-nav">
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="swiper live-auction" data-swiper-loop="true" data-swiper-items="4"
+                            data-swiper-margin="30"
+                            data-swiper-breakpoints='{"0": {"slidesPerView": "1"}, "768": {"slidesPerView": "2"}, "992": {"slidesPerView": "3"}, "1400": {"slidesPerView": "4"}}'>
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="single-product style--two">
+                                        <div class="product-img"><img src="assets/img/product9.png" alt="">
+                                        </div>
+                                        <div class="product-content">
+                                            <div class="owners"><a href="#" title="mr. Jone"><img
+                                                        src="assets/img/owner1.png" alt=""> </a><a href="#"
+                                                    title="Laumi"><img src="assets/img/owner2.png" alt=""> </a><a
+                                                    href="#" title="Tom"><img src="assets/img/owner3.png" alt="">
+                                                </a><span class="user-status white"><img src="assets/icons/check2.svg"
+                                                        class="svg" alt=""></span>
+                                            </div>
+                                            <div class="product-top">
+                                                <h5>Colourful Painting</h5>
+                                                <div class="d-flex justify-content-between">
+                                                    <h6 class="c1">0.99 ETH</h6>
+                                                    <h6>3 to 100</h6>
+                                                </div>
+                                            </div>
+                                            <div class="product-bottom">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="countdown-wrap">
+                                                        <ul class="countdown">
+                                                            <li><span class="hours">00</span></li>
+                                                            <li class="ms-1 me-1">:</li>
+                                                            <li><span class="minutes">00</span></li>
+                                                            <li class="ms-1 me-1">:</li>
+                                                            <li><span class="seconds">00</span></li>
+                                                        </ul>
+                                                    </div><a href="#" class="btn btn-border btn-sm"><img
+                                                            src="assets/icons/judge-icon.svg" alt="" class="svg">
+                                                        Place
+                                                        Bid</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="single-product style--two">
+                                        <div class="product-img"><img src="assets/img/product10.png" alt="">
+                                        </div>
+                                        <div class="product-content">
+                                            <div class="owners"><a href="#" title="mr. Jone"><img
+                                                        src="assets/img/owner1.png" alt=""> </a><a href="#"
+                                                    title="Laumi"><img src="assets/img/owner2.png" alt=""> </a><a
+                                                    href="#" title="Tom"><img src="assets/img/owner3.png" alt="">
+                                                </a><span class="user-status white"><img src="assets/icons/check2.svg"
+                                                        class="svg" alt=""></span>
+                                            </div>
+                                            <div class="product-top">
+                                                <h5>Redical Painting</h5>
+                                                <div class="d-flex justify-content-between">
+                                                    <h6 class="c1">1.98 ETH</h6>
+                                                    <h6>9 to 100</h6>
+                                                </div>
+                                            </div>
+                                            <div class="product-bottom">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="countdown-wrap">
+                                                        <ul class="countdown">
+                                                            <li><span class="hours">00</span></li>
+                                                            <li class="ms-1 me-1">:</li>
+                                                            <li><span class="minutes">00</span></li>
+                                                            <li class="ms-1 me-1">:</li>
+                                                            <li><span class="seconds">00</span></li>
+                                                        </ul>
+                                                    </div><a href="#" class="btn btn-border btn-sm"><img
+                                                            src="assets/icons/judge-icon.svg" alt="" class="svg">
+                                                        Place
+                                                        Bid</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="single-product style--two">
+                                        <div class="product-img"><img src="assets/img/product11.png" alt="">
+                                        </div>
+                                        <div class="product-content">
+                                            <div class="owners"><a href="#" title="mr. Jone"><img
+                                                        src="assets/img/owner1.png" alt=""> </a><a href="#"
+                                                    title="Laumi"><img src="assets/img/owner2.png" alt=""> </a><a
+                                                    href="#" title="Tom"><img src="assets/img/owner3.png" alt="">
+                                                </a><span class="user-status white"><img src="assets/icons/check2.svg"
+                                                        class="svg" alt=""></span>
+                                            </div>
+                                            <div class="product-top">
+                                                <h5>Colourful Painting</h5>
+                                                <div class="d-flex justify-content-between">
+                                                    <h6 class="c1">2.09 ETH</h6>
+                                                    <h6>2 to 220</h6>
+                                                </div>
+                                            </div>
+                                            <div class="product-bottom">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="countdown-wrap">
+                                                        <ul class="countdown">
+                                                            <li><span class="hours">00</span></li>
+                                                            <li class="ms-1 me-1">:</li>
+                                                            <li><span class="minutes">00</span></li>
+                                                            <li class="ms-1 me-1">:</li>
+                                                            <li><span class="seconds">00</span></li>
+                                                        </ul>
+                                                    </div><a href="#" class="btn btn-border btn-sm"><img
+                                                            src="assets/icons/judge-icon.svg" alt="" class="svg">
+                                                        Place
+                                                        Bid</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="single-product style--two">
+                                        <div class="product-img"><img src="assets/img/product12.png" alt="">
+                                        </div>
+                                        <div class="product-content">
+                                            <div class="owners"><a href="#" title="mr. Jone"><img
+                                                        src="assets/img/owner1.png" alt=""> </a><a href="#"
+                                                    title="Laumi"><img src="assets/img/owner2.png" alt=""> </a><a
+                                                    href="#" title="Tom"><img src="assets/img/owner3.png" alt="">
+                                                </a><span class="user-status white"><img src="assets/icons/check2.svg"
+                                                        class="svg" alt=""></span>
+                                            </div>
+                                            <div class="product-top">
+                                                <h5>Horrotic Painting</h5>
+                                                <div class="d-flex justify-content-between">
+                                                    <h6 class="c1">1.89 ETH</h6>
+                                                    <h6>7 to 120</h6>
+                                                </div>
+                                            </div>
+                                            <div class="product-bottom">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="countdown-wrap">
+                                                        <ul class="countdown">
+                                                            <li><span class="hours">00</span></li>
+                                                            <li class="ms-1 me-1">:</li>
+                                                            <li><span class="minutes">00</span></li>
+                                                            <li class="ms-1 me-1">:</li>
+                                                            <li><span class="seconds">00</span></li>
+                                                        </ul>
+                                                    </div><a href="#" class="btn btn-border btn-sm"><img
+                                                            src="assets/icons/judge-icon.svg" alt="" class="svg">
+                                                        Place
+                                                        Bid</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======= Sección 3 (Feeds - FOLLOWING) ======= -->
+        <section class="section3 pt-120 pb-90">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4">
+                        <div class="section-title style--two d-flex align-items-center justify-content-between">
+                            <h2 class="text-white"><img src="assets/icons/fire.png" alt="" class="mt-1 me-3"> Feeds
+                            </h2>
+                            <select class="select-rounded mt-1 me-xl-4">
+                                <option value="Following">Following</option>
+                                <option value="Meka_Verse">Meka_Verse</option>
+                                <option value="Bored_YachtClub">Bored_YachtClub</option>
+                                <option value="Bambooz_lers">Bambooz_lers</option>
+                                <option value="The_Humanoids">The_Humanoids</option>
+                                <option value="Stacked_Toadz">Stacked_Toadz</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xl-8 mb-30 mb-xl-0">
+                        <div
+                            class="d-flex align-items-center flex-wrap justify-content-center justify-content-lg-between justify-content-xl-end">
+                            <div id="filters" class="d-flex flex-wrap justify-content-center justify-content-xl-end">
+                                <button class="button is-checked" data-filter="*">All</button> <button class="button"
+                                    data-filter=":not(.artwork)">Artwork</button> <button class="button"
+                                    data-filter=":not(.photography)">Photography</button> <button class="button"
+                                    data-filter=":not(.games)">Games</button> <button class="button"
+                                    data-filter=":not(.domain)">Domains</button> <button class="button"
+                                    data-filter=":not(.memes)">Memes</button>
+                            </div><a href="#" class="btn btn-sm ms-3 d-none d-lg-inline-flex"><img
+                                    src="assets/icons/view-all.svg" alt="" class="svg"> View All</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid row justify-content-center">
+                    <div class="col-xl-3 col-lg-4 col-md-6 element-item artwork memes">
+                        <div class="single-product style--three">
+                            <div class="product-img"><img src="assets/img/product9.png" alt=""></div>
+                            <div class="product-content">
+                                <div class="owners"><a href="#" title="mr. Jone"><img src="assets/img/owner1.png"
+                                            alt=""> </a><a href="#" title="Laumi"><img src="assets/img/owner2.png"
+                                            alt=""> </a><a href="#" title="Tom"><img src="assets/img/owner3.png" alt="">
+                                    </a><span class="user-status white"><img src="assets/icons/check2.svg" class="svg"
+                                            alt=""></span></div>
+                                <div class="product-top">
+                                    <h5>Colourful Painting</h5>
+                                    <div class="d-flex justify-content-between">
+                                        <h6 class="c1">0.99 ETH</h6>
+                                        <h6>3 to 100</h6>
+                                    </div>
+                                </div>
+                                <div class="product-bottom">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="d-flex align-items-center ml-n2">
+                                            <div class="love-react style--two"></div>
+                                            <div class="love-count">13.6k</div>
+                                        </div><a href="#" class="btn btn-border btn-sm"><img
+                                                src="assets/icons/judge-icon.svg" alt="" class="svg"> Place Bid</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 element-item photography">
+                        <div class="single-product style--three">
+                            <div class="product-img"><img src="assets/img/product10.png" alt=""></div>
+                            <div class="product-content">
+                                <div class="owners"><a href="#" title="mr. Jone"><img src="assets/img/owner1.png"
+                                            alt=""> </a><a href="#" title="Laumi"><img src="assets/img/owner2.png"
+                                            alt=""> </a><a href="#" title="Tom"><img src="assets/img/owner3.png" alt="">
+                                    </a><span class="user-status white"><img src="assets/icons/check2.svg" class="svg"
+                                            alt=""></span></div>
+                                <div class="product-top">
+                                    <h5>Redical Painting</h5>
+                                    <div class="d-flex justify-content-between">
+                                        <h6 class="c1">1.98 ETH</h6>
+                                        <h6>9 to 100</h6>
+                                    </div>
+                                </div>
+                                <div class="product-bottom">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="d-flex align-items-center ml-n2">
+                                            <div class="love-react style--two"></div>
+                                            <div class="love-count">13.6k</div>
+                                        </div><a href="#" class="btn btn-border btn-sm"><img
+                                                src="assets/icons/judge-icon.svg" alt="" class="svg"> Place Bid</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 element-item games">
+                        <div class="single-product style--three">
+                            <div class="product-img"><img src="assets/img/product11.png" alt=""></div>
+                            <div class="product-content">
+                                <div class="owners"><a href="#" title="mr. Jone"><img src="assets/img/owner1.png"
+                                            alt=""> </a><a href="#" title="Laumi"><img src="assets/img/owner2.png"
+                                            alt=""> </a><a href="#" title="Tom"><img src="assets/img/owner3.png" alt="">
+                                    </a><span class="user-status white"><img src="assets/icons/check2.svg" class="svg"
+                                            alt=""></span></div>
+                                <div class="product-top">
+                                    <h5>Colourful Painting</h5>
+                                    <div class="d-flex justify-content-between">
+                                        <h6 class="c1">2.09 ETH</h6>
+                                        <h6>2 to 220</h6>
+                                    </div>
+                                </div>
+                                <div class="product-bottom">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="d-flex align-items-center ml-n2">
+                                            <div class="love-react style--two"></div>
+                                            <div class="love-count">13.6k</div>
+                                        </div><a href="#" class="btn btn-border btn-sm"><img
+                                                src="assets/icons/judge-icon.svg" alt="" class="svg"> Place Bid</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 element-item domain">
+                        <div class="single-product style--three">
+                            <div class="product-img"><img src="assets/img/product12.png" alt=""></div>
+                            <div class="product-content">
+                                <div class="owners"><a href="#" title="mr. Jone"><img src="assets/img/owner1.png"
+                                            alt=""> </a><a href="#" title="Laumi"><img src="assets/img/owner2.png"
+                                            alt=""> </a><a href="#" title="Tom"><img src="assets/img/owner3.png" alt="">
+                                    </a><span class="user-status white"><img src="assets/icons/check2.svg" class="svg"
+                                            alt=""></span></div>
+                                <div class="product-top">
+                                    <h5>Horrotic Painting</h5>
+                                    <div class="d-flex justify-content-between">
+                                        <h6 class="c1">1.89 ETH</h6>
+                                        <h6>7 to 120</h6>
+                                    </div>
+                                </div>
+                                <div class="product-bottom">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="d-flex align-items-center ml-n2">
+                                            <div class="love-react style--two"></div>
+                                            <div class="love-count">13.6k</div>
+                                        </div><a href="#" class="btn btn-border btn-sm"><img
+                                                src="assets/icons/judge-icon.svg" alt="" class="svg"> Place Bid</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 element-item artwork">
+                        <div class="single-product style--three">
+                            <div class="product-img"><img src="assets/img/product13.png" alt=""></div>
+                            <div class="product-content">
+                                <div class="owners"><a href="#" title="mr. Jone"><img src="assets/img/owner1.png"
+                                            alt=""> </a><a href="#" title="Laumi"><img src="assets/img/owner2.png"
+                                            alt=""> </a><a href="#" title="Tom"><img src="assets/img/owner3.png" alt="">
+                                    </a><span class="user-status white"><img src="assets/icons/check2.svg" class="svg"
+                                            alt=""></span></div>
+                                <div class="product-top">
+                                    <h5>Animal Girl Painting</h5>
+                                    <div class="d-flex justify-content-between">
+                                        <h6 class="c1">4.36 ETH</h6>
+                                        <h6>5 to 200</h6>
+                                    </div>
+                                </div>
+                                <div class="product-bottom">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="d-flex align-items-center ml-n2">
+                                            <div class="love-react style--two"></div>
+                                            <div class="love-count">13.6k</div>
+                                        </div><a href="#" class="btn btn-border btn-sm"><img
+                                                src="assets/icons/judge-icon.svg" alt="" class="svg"> Place Bid</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 element-item photography">
+                        <div class="single-product style--three">
+                            <div class="product-img"><img src="assets/img/product14.png" alt=""></div>
+                            <div class="product-content">
+                                <div class="owners"><a href="#" title="mr. Jone"><img src="assets/img/owner1.png"
+                                            alt=""> </a><a href="#" title="Laumi"><img src="assets/img/owner2.png"
+                                            alt=""> </a><a href="#" title="Tom"><img src="assets/img/owner3.png" alt="">
+                                    </a><span class="user-status white"><img src="assets/icons/check2.svg" class="svg"
+                                            alt=""></span></div>
+                                <div class="product-top">
+                                    <h5>The Third Eye</h5>
+                                    <div class="d-flex justify-content-between">
+                                        <h6 class="c1">3.66 ETH</h6>
+                                        <h6>3 to 320</h6>
+                                    </div>
+                                </div>
+                                <div class="product-bottom">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="d-flex align-items-center ml-n2">
+                                            <div class="love-react style--two"></div>
+                                            <div class="love-count">13.6k</div>
+                                        </div><a href="#" class="btn btn-border btn-sm"><img
+                                                src="assets/icons/judge-icon.svg" alt="" class="svg"> Place Bid</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 element-item games memes">
+                        <div class="single-product style--three">
+                            <div class="product-img"><img src="assets/img/product15.png" alt=""></div>
+                            <div class="product-content">
+                                <div class="owners"><a href="#" title="mr. Jone"><img src="assets/img/owner1.png"
+                                            alt=""> </a><a href="#" title="Laumi"><img src="assets/img/owner2.png"
+                                            alt=""> </a><a href="#" title="Tom"><img src="assets/img/owner3.png" alt="">
+                                    </a><span class="user-status white"><img src="assets/icons/check2.svg" class="svg"
+                                            alt=""></span></div>
+                                <div class="product-top">
+                                    <h5>Glue Painting</h5>
+                                    <div class="d-flex justify-content-between">
+                                        <h6 class="c1">0.99 ETH</h6>
+                                        <h6>30 to 100</h6>
+                                    </div>
+                                </div>
+                                <div class="product-bottom">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="d-flex align-items-center ml-n2">
+                                            <div class="love-react style--two"></div>
+                                            <div class="love-count">13.6k</div>
+                                        </div><a href="#" class="btn btn-border btn-sm"><img
+                                                src="assets/icons/judge-icon.svg" alt="" class="svg"> Place Bid</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 element-item domain">
+                        <div class="single-product style--three">
+                            <div class="product-img"><img src="assets/img/product16.png" alt=""></div>
+                            <div class="product-content">
+                                <div class="owners"><a href="#" title="mr. Jone"><img src="assets/img/owner1.png"
+                                            alt=""> </a><a href="#" title="Laumi"><img src="assets/img/owner2.png"
+                                            alt=""> </a><a href="#" title="Tom"><img src="assets/img/owner3.png" alt="">
+                                    </a><span class="user-status white"><img src="assets/icons/check2.svg" class="svg"
+                                            alt=""></span></div>
+                                <div class="product-top">
+                                    <h5>Osean Painting</h5>
+                                    <div class="d-flex justify-content-between">
+                                        <h6 class="c1">1.69 ETH</h6>
+                                        <h6>1 to 100</h6>
+                                    </div>
+                                </div>
+                                <div class="product-bottom">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="d-flex align-items-center ml-n2">
+                                            <div class="love-react style--two"></div>
+                                            <div class="love-count">13.6k</div>
+                                        </div><a href="#" class="btn btn-border btn-sm"><img
+                                                src="assets/icons/judge-icon.svg" alt="" class="svg"> Place Bid</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 d-lg-none text-center mb-30"><a href="#" class="btn btn-sm ms-3"><img
+                                src="assets/icons/view-all.svg" alt="" class="svg"> View All</a></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======= Sección 4 (Trending in - all Categories) ======= -->
+        <section class="section4 pt-120 pb-120 section-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <div class="section-title style--two">
+                            <div class="d-flex flex-wrap align-items-center">
+                                <h2 class="text-white"><img src="assets/icons/title-icon1.svg" alt=""
+                                        class="svg mt-1 me-3"> Trending in</h2><select class="select">
+                                    <option value="all_cat">all Categories</option>
+                                    <option value="trading_paint">Trading Paint</option>
+                                    <option value="art_painting">Art Painting</option>
+                                    <option value="virtual_paints">Virtual Paints</option>
+                                    <option value="collectibles">Collectibles</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 d-none d-sm-block">
+                        <div class="swiper-nav">
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="swiper live-auction" data-swiper-loop="true" data-swiper-items="4"
+                            data-swiper-margin="30"
+                            data-swiper-breakpoints='{"0": {"slidesPerView": "1"}, "768": {"slidesPerView": "2"}, "992": {"slidesPerView": "3"}, "1400": {"slidesPerView": "4"}}'>
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><a href="#" class="trending-profile">
+                                        <div class="tp-img"><img src="assets/img/profile-cover1.png" alt=""></div>
+                                        <div class="profile-content text-center">
+                                            <div class="profile-top">
+                                                <div class="user-avatar"><img src="assets/img/profile1.png" alt="">
+                                                    <span class="user-status"><img src="assets/icons/check-white.svg"
+                                                            class="svg" alt=""></span>
+                                                </div>
+                                                <h5 class="text-white">Colourful Painting</h5>
+                                                <h6>by <span class="c1">Meka_Verse</span></h6>
+                                            </div>
+                                            <div class="profile-bottom">The revenants are the world’s first Intelligent
+                                                Collectibles.</div>
+                                        </div>
+                                    </a></div>
+                                <div class="swiper-slide"><a href="#" class="trending-profile">
+                                        <div class="tp-img"><img src="assets/img/profile-cover2.png" alt=""></div>
+                                        <div class="profile-content text-center">
+                                            <div class="profile-top">
+                                                <div class="user-avatar"><img src="assets/img/profile2.png" alt="">
+                                                    <span class="user-status"><img src="assets/icons/check-white.svg"
+                                                            class="svg" alt=""></span>
+                                                </div>
+                                                <h5 class="text-white">Redical Painting</h5>
+                                                <h6>by <span class="c1">Summy_Scottt</span></h6>
+                                            </div>
+                                            <div class="profile-bottom">The revenants are the world’s first Intelligent
+                                                Collectibles.</div>
+                                        </div>
+                                    </a></div>
+                                <div class="swiper-slide"><a href="#" class="trending-profile">
+                                        <div class="tp-img"><img src="assets/img/profile-cover3.png" alt=""></div>
+                                        <div class="profile-content text-center">
+                                            <div class="profile-top">
+                                                <div class="user-avatar"><img src="assets/img/profile3.png" alt="">
+                                                    <span class="user-status"><img src="assets/icons/check-white.svg"
+                                                            class="svg" alt=""></span>
+                                                </div>
+                                                <h5 class="text-white">Horrotic Painting</h5>
+                                                <h6>by <span class="c1">Kwami_Luca</span></h6>
+                                            </div>
+                                            <div class="profile-bottom">The revenants are the world’s first Intelligent
+                                                Collectibles.</div>
+                                        </div>
+                                    </a></div>
+                                <div class="swiper-slide"><a href="#" class="trending-profile">
+                                        <div class="tp-img"><img src="assets/img/profile-cover4.png" alt=""></div>
+                                        <div class="profile-content text-center">
+                                            <div class="profile-top">
+                                                <div class="user-avatar"><img src="assets/img/profile4.png" alt="">
+                                                    <span class="user-status"><img src="assets/icons/check-white.svg"
+                                                            class="svg" alt=""></span>
+                                                </div>
+                                                <h5 class="text-white">Colourful Painting</h5>
+                                                <h6>by <span class="c1">Kandi_Logan</span></h6>
+                                            </div>
+                                            <div class="profile-bottom">The revenants are the world’s first Intelligent
+                                                Collectibles.</div>
+                                        </div>
+                                    </a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======= Sección 5 (Create & Sell Your NFTs) ======= -->
+        <section class="section5 pt-120 pb-90">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section-title style--two">
+                            <div class="d-flex flex-wrap align-items-center">
+                                <h2 class="text-white">Create & Sell Your NFTs</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="selling-process text-center text-white">
+                            <div class="icon"><img src="assets/icons/sell1.png" alt=""></div>
+                            <div class="content">
+                                <h5>Setup Your Wallet</h5>
+                                <p>Once you’ve set up your wallet of choice, connect it to anefty by clicking the wallet
+                                    icon.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="selling-process text-center text-white">
+                            <div class="icon"><img src="assets/icons/sell2.png" alt=""></div>
+                            <div class="content">
+                                <h5>Create Your Collection</h5>
+                                <p>Click my collections and set up your collection. add social link a description and
+                                    others
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="selling-process text-center text-white">
+                            <div class="icon"><img src="assets/icons/sell3.png" alt=""></div>
+                            <div class="content">
+                                <h5>Add Our NFTs</h5>
+                                <p>Upload your work likes Image, video, audio or 3D art to anefty by clicking the wallet
+                                    icon.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="selling-process text-center text-white">
+                            <div class="icon"><img src="assets/icons/sell4.png" alt=""></div>
+                            <div class="content">
+                                <h5>List Them for Sale</h5>
+                                <p>Choose between auction wallet of choice, connect it social link a description and
+                                    others
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======= Sección 6 (Formulario Support Center) ======= -->
+        <section class="section6 pb-120 mt-lg-120 pt-60 pt-lg-0 section-shape section-shape-right">
+            <div class="container">
+                <div class="row gutter-60">
+                    <div class="col-lg-4">
+                        <div class="support-img"><img src="assets/img/support-img.png" alt=""></div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="d-flex justify-content-end mb-60">
+                            <div class="quick-contact gradient-box"><img src="assets/icons/phone.png"
+                                    class="gradient-box-icon" alt="">
+                                <h3 class="text-white">Quick Contact Us:</h3><a href="#">+003 252-5700</a>
+                            </div>
+                        </div>
+                        <div class="support-content">
+                            <div class="section-title text-white">
+                                <h2>Support Center</h2>
+                                <p>Anefty are non-fungible tokens. they are unique items that you can't replace with
+                                    something else. for example, a one of a kind trading card is an NFT – you can't just
+                                    replace it with any other card.</p>
+                            </div>
+                            <form action="#" class="support-form row">
+                                <div class="col-lg-6"><input type="text" name="name" class="form-control"
+                                        placeholder="Your Name" required></div>
+                                <div class="col-lg-6"><input type="email" name="email" class="form-control"
+                                        placeholder="Your Email" required></div>
+                                <div class="col-12"><textarea name="message" class="form-control"
+                                        placeholder="Write Message Here" required></textarea> <button type="submit"
+                                        class="btn"><img src="assets/icons/mail.svg" alt="" class="svg"> Send
+                                        Request</button></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ======= Footer ======= -->
+    <footer class="footer">
+
+        <!-- ======= Footer (Información de la web) ======= -->
+        <div class="footer-main pb-3 bg-transparent">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-4 col-sm-6">
+                        <div class="widget widget_about text-white style--two"><img
+                                src="./assets/icons/footer-logo-dark.svg" alt="" class="footer-logo">
+                            <p>The anefty first large digital marketplace crypto collectibles & non fungible token
+                                buy sell & discover digital assets.</p>
+                            <div class="socials d-flex align-items-center"><a href="#" target="_blank"><img
+                                        src="assets/icons/twitter-round.svg" alt="" class="svg"></a><a href="#"
+                                    target="_blank"><img src="assets/icons/instagram-round.svg" alt=""
+                                        class="svg"></a><a href="#" target="_blank"><img
+                                        src="assets/icons/pinterest.svg" alt="" class="svg"></a><a href="#"
+                                    target="_blank"><img src="assets/icons/whatsapp.svg" alt="" class="svg"></a></div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-4 col-sm-6">
+                        <div class="widget widget_nav_menu">
+                            <h4 class="widget_title">Marketplace</h4>
+                            <ul>
+                                <li><a href="#">All NFTs</a></li>
+                                <li><a href="#">Trading Paint</a></li>
+                                <li><a href="#">Art Painting</a></li>
+                                <li><a href="#">Virtual Paints</a></li>
+                                <li><a href="#">Collectibles</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-4 col-sm-6">
+                        <div class="widget widget_nav_menu">
+                            <h4 class="widget_title">Resource</h4>
+                            <ul>
+                                <li><a href="#">Help Center</a></li>
+                                <li><a href="#">Platform Status</a></li>
+                                <li><a href="#">Partners</a></li>
+                                <li><a href="#">Gas-Free Marketplace</a></li>
+                                <li><a href="#">Suggestions</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-4 col-sm-6">
+                        <div class="widget widget_nav_menu">
+                            <h4 class="widget_title">My Account</h4>
+                            <ul>
+                                <li><a href="#">Profile</a></li>
+                                <li><a href="#">Author</a></li>
+                                <li><a href="#">My Collections</a></li>
+                                <li><a href="#">Settings</a></li>
+                                <li><a href="#">Activity</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-sm-6">
+                        <div class="widget widget_instagram">
+                            <h4 class="widget_title">Follow Instagram</h4>
+                            <div class="instagram-content"><a href="#" target="_blank"><img src="assets/img/insta1.png"
+                                        alt=""> </a><a href="#" target="_blank"><img src="assets/img/insta2.png" alt="">
+                                </a><a href="#" target="_blank"><img src="assets/img/insta3.png" alt=""> </a><a href="#"
+                                    target="_blank"><img src="assets/img/insta4.png" alt=""> </a><a href="#"
+                                    target="_blank"><img src="assets/img/insta5.png" alt=""> </a><a href="#"
+                                    target="_blank"><img src="assets/img/insta6.png" alt=""></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ======= Footer (Logos de Convenios) ======= -->
+        <div class="footer-middle sep-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div
+                            class="logo-wrap d-flex justify-content-center justify-content-xl-between flex-wrap align-items-center">
+                            <img src="assets/img/f_logo1.png" alt=""> <img src="assets/img/f_logo2.png" alt=""> <img
+                                src="assets/img/f_logo3.png" alt=""> <img src="assets/img/f_logo4.png" alt=""> <img
+                                src="assets/img/f_logo5.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ======= Footer (Derechos de Autor) ======= -->
+        <div class="footer-bottom sep-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="copyright-content text-center text-md-start text-white">© 2018 - <span
+                                class="currentYear">2022</span> <a href="#" class="text-white">Themelooks</a> Networks,
+                            Inc.</div>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="footer-menu justify-content-center justify-content-md-end">
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- ======= Complemento Fuente (Flecha) ======= -->
+    </div><a href="#" class="back-to-top"><i class="fas fa-long-arrow-alt-up"></i></a>
+
+    <!-- ======= Librerias JS ======= -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- ======= Complemento JS Menu ======= -->
+    <script src="assets/js/menu.min.js"></script>
+
+    <!-- ======= Complemento Header (Efecto ) ======= -->
+    <script src="assets/plugins/particles/particles.min.js"></script>
+
+    <!-- ======= Complemento JS Sección 1 - 4 (Select 24 hours - all categories) ======= -->
+    <script src="assets/plugins/nice-select/jquery.nice-select.min.js"></script>
+
+    <!-- ======= Complemento JS Sección 3 (Select Following) ======= -->
+    <script src="assets/plugins/countdown/countdown.min.js"></script>
+
+    <!-- ======= Complemento JS Sección 2 - 4 (Card Slider ) ======= -->
+    <script src="assets/plugins/swiper/swiper-bundle.min.js"></script>
+
+    <!-- ======= Script JS ======= -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
